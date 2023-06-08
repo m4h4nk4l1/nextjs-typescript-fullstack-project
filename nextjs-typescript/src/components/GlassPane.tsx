@@ -1,8 +1,9 @@
-import from '../styles/component_styles/GlassPane.scss'
+import style from "../styles/GlassPane.module.scss";
 
-const GlassPane = ({children}) => {
+
+const GlassPane = () => {
   return (
-    <div>{children}</div>
+    <div className={style.container}>this is a section</div>
   )
 }
 

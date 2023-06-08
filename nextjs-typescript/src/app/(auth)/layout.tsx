@@ -1,12 +1,20 @@
-import GlassPane from '../../components/GlassPane';
+import { Inter } from "@next/font/google";
+import GlassPane from "@/components/GlassPane";
 
-const AuthRootLayout = () => {
+const inter = Inter({
+  variable: "--font-inter",
+});
+
+const AuthRootLayout = ({children}) => {
   return (
-    <div>
+    <html lang="en" className={inter.variable}>
+      <head />
+      <body className={auth.body}>
         <GlassPane>
-            
+          {children}
         </GlassPane>
-    </div>
+      </body>
+    </html>
   )
 }
 
