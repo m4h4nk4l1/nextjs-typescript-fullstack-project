@@ -1,9 +1,13 @@
-import style from "../styles/GlassPane.module.scss";
+import clsx from "clsx";
 
-
-const GlassPane = () => {
-  return (
-    <div className={style.container}>this is a section</div>
+const GlassPane = ({
+  children, className
+}: {
+  children: React.ReactNode, className: String
+}) => {
+  return (<div className={clsx('glass rounded-2xl border-solid border-2 border-gray-200', className)}>
+    {children}
+  </div>
   )
 }
 
